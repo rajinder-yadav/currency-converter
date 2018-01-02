@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="title" datatype="html">
+        <source>Currency Converter</source>
+        <target>Convertisseur de devise</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fx-module/fx-converter/fx-converter.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="usage" datatype="html">
+        <source>Type in amount and select currency:</source>
+        <target>Tapez le montant et sélectionnez la devise:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fx-module/fx-converter/fx-converter.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="disclaimer" datatype="html">
+        <source>Disclaimer</source>
+        <target>Avertissement</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fx-module/fx-converter/fx-converter.component.ts</context>
+          <context context-type="linenumber">44</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fx-info1" datatype="html">
+        <source>Conversion rate: <x id="INTERPOLATION" equiv-text="{{disclaimer_message}}"/></source>
+        <target>Taux de conversion: <x id="INTERPOLATION" equiv-text="{{disclaimer_message}}"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fx-module/fx-converter/fx-converter.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="fx-info2" datatype="html">
+        <source>Rates are updated every minute.</source>
+        <target>Les tarifs sont mis à jour chaque minute.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/fx-module/fx-converter/fx-converter.component.ts</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

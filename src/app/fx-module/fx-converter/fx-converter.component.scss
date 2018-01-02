@@ -1,0 +1,48 @@
+$error_red: red;
+$error_bg: rgb(255, 255, 221);
+
+$readonly_border: rgb(138, 138, 138);
+$input_error_red: rgb(253, 150, 150);
+$readonly_bg: rgb(228, 228, 228);
+
+$disclaimer_bg: rgb(175, 252, 172);
+$disclaimer_text: blue;
+
+.error {
+  border: 2px solid $error_red;
+  background-color: $error_bg;
+  margin: 4px 0;
+  padding: 3px 4px;
+}
+.input_error {
+  background-color: $input_error_red;
+}
+.readonly {
+  background-color: $readonly_bg;
+}
+input {
+  border: 1px solid $readonly_border;
+  padding: 2px 4px;
+  margin: 2px;
+}
+.small {
+  font-size: small;
+  font-family: sans-serif;
+}
+.disclaimer {
+  color: $disclaimer_text;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.disclaimer_text {
+  font-weight: bold;
+  background-color: $disclaimer_bg;
+}
+.fx-border {
+  border: 1px solid black;
+}
+.tooltip {
+  background-color: #415A90;
+  color: white;
+  text-align: center;
+}

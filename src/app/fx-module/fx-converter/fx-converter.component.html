@@ -1,0 +1,50 @@
+<div class="fx-border slds-p-around_x-small">
+  <div class="slds-m-bottom_xx-small" i18n="@@title">Currency Converter</div>
+  <ng-container *ngIf="error_message?.length > 0">
+    <div class="error">
+      {{error_message}}
+    </div>
+  </ng-container>
+  <ng-container *ngIf="input_error?.length > 0">
+    <div class="error">
+      {{input_error}}
+    </div>
+  </ng-container>
+  <div class="small" i18n="@@usage">Type in amount and select currency:</div>
+  <div class="slds-grid">
+    <input type="text"
+      class="slds-col"
+      name="source_currency"
+      [(ngModel)]="source_currency"
+      (keyup)="onKeyUp()"
+      [class.input_error]="input_error?.length > 0" >
+
+    <select name="source_base" id="" [(ngModel)]="source_base" (change)="onSelect()" >
+      <option *ngFor="let base of FX_BASES" [ngValue]="base" class="value">{{base}}</option>
+    </select>
+  </div>
+  <div class="slds-grid">
+    <input type="text"
+      class="slds-col readonly"
+      name= "target_currency"
+      [(ngModel)]="target_currency"
+      readonly >
+
+    <select name="target_base" id="" [(ngModel)]="target_base" (change)="onSelect()">
+      <option *ngFor="let base of FX_BASES" [ngValue]="base" class="value">{{base}}</option>
+    </select>
+  </div>
+  <div class="slds-grid slds-grid_align-end">
+    <div class="slds-col disclaimer"
+      (click)="onDisclaimerClick()"
+      (mouseleave)="onDisclaimerExit()" i18n="@@disclaimer">
+      Disclaimer
+    </div>
+  </div>
+  <ng-container *ngIf="disclaimer_message?.length > 0">
+    <div class="tooltip">
+      <p i18n="@@fx-info1">Conversion rate: {{disclaimer_message}}</p>
+      <p i18n="@@fx-info2">Rates are updated every minute.</p>
+    </div>
+  </ng-container>
+</div>
